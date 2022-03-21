@@ -1,0 +1,33 @@
+header {
+    margin: 1px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: rgb(216, 121, 77);
+    color: white;
+    font-size: 15px;
+    font-family: "Cairo", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 30px;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+  }
+
+
+table,
+td {
+    border: 1px solid #2133;
+    border-collapse: collapse;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}

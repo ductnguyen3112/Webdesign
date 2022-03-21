@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--viewport will be useful when we use responsive design, different layouts for different devices-->
+        <title>Form Webpage</title>
+    
+        <link rel="stylesheet" href="form/css/form.css" />
+      </head>
+  <body>
+   
+    <div class="container">
+      <h3>Play with FORMS!!!</h3>
+      <form id="form-main" onsubmit="event.preventDefault();">
+
+        <div>
+          <label> First Name </label>
+          <input type="text" name="firstName" id="firstName" />
+        </div>
+        <div>
+          <label> Last Name </label>
+          <input type="text" name="lastName" id="lastName" />
+        </div>
+
+        <div>
+          <label> Employee ID </label>
+          <input type="number" name="empId" id="empId" />
+        </div>
+
+        <div>
+          <label> Designation </label>
+          <input type="text" name="designation" id="designation" />
+        </div>
+
+        <div>
+          <button class="submit">Submit</button>
+          <button class="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

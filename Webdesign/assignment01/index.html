@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Register</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    </head>
+
+<body>
+
+	<!--HEADER--> 
+	<div class="header">
+		<h1>Assignment 02</h1>
+	  </div>
+	<!--FORM--> 
+	<div class="container">
+		<h1>Fill all required information</h1>
+        <div>
+			<boxfont> Email/User </boxfont>
+			<input type="text" name="Username" id="Username" />
+		  </div>
+
+		  <div>
+			<boxfont> Password </boxfont>
+			<input type="text" name="Passwd" id="Passwd" />
+		  </div>
+
+
+		  <div>
+			<boxfont> First Name </boxfont>
+			<input type="text" name="Firstname" id="Firstname" />
+		  </div>
+
+  
+		  <div>
+			<boxfont> Last Name </boxfont>
+			<input type="text" name="Lstname" id="Lstname" />
+		  </div>
+  
+		  <div>
+			<boxfont> Phone</boxfont>
+			<input type="number" name="Phonenumber" id="Phonenumber" />
+		  </div>
+		  
+		  <div>
+			<button type="button" onclick="Register()">Register</button>
+			<button type="button" onclick="reset()">Reset</button>
+		  </div>		
+		</form>
+<!--Table start here-->
+&nbsp;
+
+<table id="RegistryTable">
+	
+  <thead>
+	  <tr>
+		  <th colspan="10">List of Registration</th>
+	  </tr>
+  </thead>
+  <tbody>
+	  <tr>
+		  <td>Email/User</td>
+		  <td>Password</td>
+		  <td>Firstname</td>
+		  <td>Lastname</td>
+		  <td>Phone</td>
+	  </tr>
+  </tbody>
+  <tfoot>
+	  <!--Examples--> 
+	<tr>
+	  <td>tony3112</td>
+	  <td>123456</td>
+	  <td>Thinh</td>
+	  <td>Nguyen</td>
+	  <td>4386301668</td>
+	</tr>
+  </tfoot>  
+</table>
+
+<pre>
+
+<!--This is Footer--> 
+
+</pre>
+
+
+<footer>
+	<p>© 2022 Duc Thinh Nguyen 2213062 </p>
+</footer>
+
+	<!--Sripts for Inserting Rows--> 	 
+	<script>
+  
+
+		function Register() {
+		  var table = document.getElementById("RegistryTable");
+
+		  var Newrow = table.insertRow(3);
+		  var info1 = Newrow.insertCell(0);
+		  var info2 = Newrow.insertCell(1);
+		  var info3 = Newrow.insertCell(2);
+		  var info4 = Newrow.insertCell(3);
+		  var info5 = Newrow.insertCell(4);
+
+		  let user = document.getElementById("Username").value;
+          let pass= document.getElementById("Passwd").value;
+          let name = document.getElementById("Firstname").value;
+          let lname = document.getElementById("Lstname").value;
+          let phone = document.getElementById("Phonenumber").value;
+
+
+		  
+		info1.innerHTML = user;
+        info2.innerHTML = pass;
+        info3.innerHTML = name;
+        info4.innerHTML = lname;
+        info5.innerHTML = phone;
+		alert("Register successful!");	
+
+		}
+		
+	function reset() {
+		location.reload()
+		}
+		
+	</script>
+	<!--Sripts for Reset--> 
+	
+  </body>
+  </html>
